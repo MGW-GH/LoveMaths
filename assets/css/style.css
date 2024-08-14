@@ -177,7 +177,7 @@ body {
 
 /* caveat */
 .caveat {
-    width: 25%;
+    text-align: right;
     padding-right: 0;
     font-style: italic;
     font-size: small;
