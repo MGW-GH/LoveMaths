@@ -51,9 +51,12 @@ body {
 }
 
 .controls-area {
-    width: 85%;
-    margin: 30px auto;
+    display: flex;
+    justify-content: center; /* Center buttons horizontally */
+    align-items: top; /* Align items to the bottom (if needed) */
+    gap: 50px; /* Space between buttons */
 }
+
 
 #score {
     color: green;
@@ -87,12 +90,13 @@ body {
 /* --------- Buttons */
 
 .btn {
-    width: 220px;
-    height: 60px;
+    width: 100px; /* Adjust size as needed */
+    height: 100px; /* Adjust size as needed */
     font-family: "Raleway", sans-serif;
     text-transform: uppercase;
     letter-spacing: 1.2px;
     color: white;
+    border-radius: 50%; /* Make buttons round */
 }
 
 .btn:focus {
@@ -176,12 +180,20 @@ body {
 }
 
 /* caveat */
+.division-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
 .caveat {
-    text-align: right;
-    padding-right: 0;
+    margin-top: 40px; /* Space between button and text */
     font-style: italic;
-    font-size: small;
+    font-size: 0.8rem;
     color: rgba(2, 2, 2, 0.5);
+    text-align: center; /* Center text under the button */
+    word-wrap: break-word; /* Ensure the text wraps if necessary */
 }
 
 /* --------- Media queries */

@@ -26,11 +26,14 @@
             <button data-type="multiply" class="btn btn--big btn--orange">
                 <i class="fas fa-times"></i>
             </button>
-            <button data-type="division" class="btn btn--big btn--red">
-                <i class="fas fa-divide"></i>
-            </button>
+            <div class="division-container">
+                <button data-type="division" class="btn btn--big btn--red">
+                    <i class="fas fa-divide"></i>
+                </button>
+                <p class="caveat">(Division is rounded to nearest whole number!)</p>
+            </div>
         </div>
-        <div><p class="caveat">(Division is rounded to nearest whole number!)</p></div>
+        
         <div class="question-area">
             <span id="operand1">0</span>
             <span id="operator">x</span>
